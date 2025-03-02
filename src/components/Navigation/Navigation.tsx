@@ -1,20 +1,12 @@
-import { Box, Button } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import { Stack } from '@mui/material';
+import NavigationLink from '../ui/NavigationLink';
 
 const Navigation = () => {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-      }}
-    >
-      <Button component={NavLink} to="/">
-        Home
-      </Button>
-      <Button component={NavLink} to="/catalog">
-        Catalog
-      </Button>
-    </Box>
+    <Stack direction="row" spacing={4} useFlexGap>
+      <NavigationLink to="/">Home</NavigationLink>
+      <NavigationLink to="/catalog">Catalog</NavigationLink>
+    </Stack>
   );
 };
 

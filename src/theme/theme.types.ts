@@ -11,4 +11,21 @@ declare module '@mui/material/styles' {
     tablet: true;
     desktop: true;
   }
+  interface TypographyVariants {
+    navLink: React.CSSProperties;
+  }
+  interface TypographyVariantsOptions {
+    navLink?: React.CSSProperties;
+  }
+}
+declare module '@mui/material/Typography' {
+  interface TypographyPropsVariantOverrides {
+    navLink: true;
+  }
+}
+
+declare module '@mui/material/Button' {
+  interface ButtonPropsVariantOverrides {
+    appButton: true;
+  }
 }
