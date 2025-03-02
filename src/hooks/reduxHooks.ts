@@ -15,6 +15,8 @@ export const useCatalogSelectors = () => {
   const perPage = useAppSelector(catalogSelectors.selectPerPage);
   const totalPages = useAppSelector(catalogSelectors.selectTotalPages);
 
+  const queryParams = useAppSelector(catalogSelectors.selectQueryParams);
+
   return {
     catalogItems,
     favourites,
@@ -23,5 +25,6 @@ export const useCatalogSelectors = () => {
     page,
     perPage,
     totalPages,
+    queryParams,
   };
 };

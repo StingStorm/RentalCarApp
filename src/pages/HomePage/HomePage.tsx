@@ -7,6 +7,7 @@ import homeBG2x from '@/assets/img/home/background@2x.jpg';
 const HomePage = () => {
   return (
     <Box
+      component="section"
       sx={{
         paddingTop: '436px',
         paddingBottom: '56px',
